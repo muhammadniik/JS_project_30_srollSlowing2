@@ -1,0 +1,102 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'Vazer';
+    src: url('../fonts/vazir-Black.eot');
+    src: url('../fonts/vazir.ttf') format('truetype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff');
+}
+
+body {
+    font-family: 'Vazer';
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 600px;
+    margin: 0% auto;
+    position: relative;
+}
+
+.main header {
+    position: fixed;
+    width: 600px;
+    height: 100px;
+    z-index: 100;
+    background-color: rgb(129, 129, 129);
+}
+
+.main header .nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main header .nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+header .nav ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav ul li.active {
+    background-color: rgb(82, 82, 82);
+}
+
+header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+}
+
+header .nav ul li a:hover {
+    color: black;
+}
+
+.contant {
+    width: 100%;
+    margin-top: 100px;
+    position: absolute;
+    flex-direction: column;
+}
+
+.contant section {
+    width: 100%;
+    height: 200vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 49, 49);
+}
+
+.contant #callUse {
+    background-color: rgb(204, 194, 49);
+}
+
+.contant #works {
+    background-color: rgb(49, 129, 204);
+}
+
+.contant #games {
+    background-color: rgb(204, 49, 170);
+}
